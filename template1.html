@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chipchick: Official Fan Site (The Pringle Phenomenon)</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for the Pringles Theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'chip-red': '#E4002B', // Pringles Red
+                        'chip-gold': '#FCD75E', // Chip color accent
+                        'chip-brown': '#3A2E1C', // Shadow/Text color
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scroll behavior for smooth navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hero text effect (optional, but thematic) */
+        .chipchick-text {
+            text-shadow: 4px 4px 0px #3A2E1C; /* Brown shadow for a bold, cartoon look */
+        }
+        
+        /* For the curved chip header aesthetic */
+        .curved-top {
+            border-top-left-radius: 50% 10%;
+            border-top-right-radius: 50% 10%;
+        }
+        .curved-bottom {
+            border-bottom-left-radius: 50% 10%;
+            border-bottom-right-radius: 50% 10%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans text-chip-brown">
+
+    <!-- Header and Navigation (Sticky, Pringles Red) -->
+    <header id="header" class="sticky top-0 z-50 bg-chip-red shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo/Title -->
+                <div class="flex-shrink-0">
+                    <a href="#hero" class="text-3xl font-extrabold text-white chipchick-text transition duration-300 hover:text-chip-gold">
+                        Chipchick Central
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex space-x-4">
+                    <a href="#merch" class="text-white px-3 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-chip-red transition duration-200">Merch</a>
+                    <a href="#pictures" class="text-white px-3 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-chip-red transition duration-200">Pictures</a>
+                    <a href="#sightings" class="text-white px-3 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-chip-red transition duration-200">Sightings</a>
+                    <a href="#lore" class="text-white px-3 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-chip-red transition duration-200">The Lore</a>
+                </nav>
+
+                <!-- Mobile Menu Icon (Placeholder for touch-first design) -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="bg-white text-chip-red p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
+                         <!-- Icon (Hamburger or Chip-shape) -->
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+         <!-- Mobile Menu Overlay -->
+         <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-chip-red shadow-lg rounded-b-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="#merch" class="text-white block px-3 py-2 rounded-lg text-base font-medium hover:bg-white hover:text-chip-red transition duration-200">Merch</a>
+                <a href="#pictures" class="text-white block px-3 py-2 rounded-lg text-base font-medium hover:bg-white hover:text-chip-red transition duration-200">Pictures</a>
+                <a href="#sightings" class="text-white block px-3 py-2 rounded-lg text-base font-medium hover:bg-white hover:text-chip-red transition duration-200">Sightings</a>
+                <a href="#lore" class="text-white block px-3 py-2 rounded-lg text-base font-medium hover:bg-white hover:text-chip-red transition duration-200">The Lore</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="pt-2">
+
+        <!-- HERO SECTION (The Stack) -->
+        <section id="hero" class="bg-white curved-bottom pt-16 pb-20 px-4 sm:px-6 lg:px-8 shadow-inner">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-6xl sm:text-7xl lg:text-8xl font-black text-chip-red chipchick-text tracking-tight mb-4">
+                    CHIPCHICK!
+                </h1>
+                <p class="text-2xl sm:text-3xl text-chip-brown font-semibold mb-8">
+                    The Official Fan Site for the Greatest Civic Doodle Creation.
+                </p>
+                <div class="inline-block bg-chip-gold p-6 rounded-full shadow-2xl transition transform hover:scale-105 duration-300">
+                    <p class="text-xl font-bold text-chip-brown">
+                        "Once you pop... the lore don't stop."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LORE SECTION -->
+        <section id="lore" class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto bg-white p-6 sm:p-10 rounded-xl shadow-2xl border-4 border-chip-red">
+                <h2 class="text-4xl font-extrabold text-chip-red mb-6 border-b-4 border-chip-gold pb-2">
+                    The Deep-Fried Lore
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 text-lg">
+                    <div>
+                        <h3 class="font-bold text-2xl mb-3 text-chip-brown">Origin Story: The Jackbox Birth</h3>
+                        <p class="mb-4">
+                            Chipchick burst onto the scene in the chaotic crucible of *Civic Doodle* during a late-night Jackbox session. What started as a simple prompt for "mascot for a tiny town" evolved into a half-chicken, half-crispy potato chip hybrid, permanently shaped by the curvature of its inception. The original concept sketches are highly classified, but we believe the inspiration came from a half-eaten snack bowl.
+                        </p>
+                        <p class="mb-4 font-bold bg-chip-gold p-3 rounded-lg">
+                            Mascot Motto: "If it crumbles, it flies."
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-2xl mb-3 text-chip-brown">Physiology & Behavior</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>**Feathers:** Subtly dusted with what looks like Paprika or Sour Cream & Onion seasoning.</li>
+                            <li>**The Chip Body:** Perfectly saddle-shaped, allowing it to perch on round objects.</li>
+                            <li>**Habitat:** Primarily found near large, cylindrical containers, or in the reflection of freshly-polished municipal signs.</li>
+                            <li>**Diet:** Highly complex—it sustains itself on positive vibes and the crumbs of forgotten creativity.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- MERCH SECTION -->
+        <section id="merch" class="bg-chip-red py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-extrabold text-white mb-10 text-center border-b-4 border-chip-gold pb-2">
+                    Official Merch Drop (Get your Crunch!)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Item 1: T-Shirt -->
+                    <div class="bg-white p-6 rounded-xl shadow-2xl text-center transition transform hover:scale-[1.02] duration-300">
+                        <img src="https://placehold.co/400x300/E4002B/ffffff?text=Chipchick+Tee" alt="Chipchick T-Shirt Mockup" class="w-full h-48 object-cover mb-4 rounded-lg border-2 border-chip-gold" onerror="this.onerror=null;this.src='https://placehold.co/400x300/E4002B/ffffff?text=Chipchick+Tee';">
+                        <h3 class="text-xl font-bold text-chip-brown mb-2">The Crumb Collector Tee</h3>
+                        <p class="text-gray-600 mb-4">Perfectly curved graphic, 100% Cotton-Dusted.</p>
+                        <button class="w-full bg-chip-red text-white font-bold py-3 rounded-full hover:bg-chip-brown transition duration-200 shadow-md">
+                            Buy Now ($24.99)
+                        </button>
+                    </div>
+
+                    <!-- Item 2: Sticker Pack -->
+                    <div class="bg-white p-6 rounded-xl shadow-2xl text-center transition transform hover:scale-[1.02] duration-300">
+                        <img src="https://placehold.co/400x300/FCD75E/3A2E1C?text=Chipchick+Sticker+Pack" alt="Chipchick Sticker Pack Mockup" class="w-full h-48 object-cover mb-4 rounded-lg border-2 border-chip-gold" onerror="this.onerror=null;this.src='https://placehold.co/400x300/FCD75E/3A2E1C?text=Chipchick+Sticker+Pack';">
+                        <h3 class="text-xl font-bold text-chip-brown mb-2">The Flamin' Hot Sticker Set</h3>
+                        <p class="text-gray-600 mb-4">5 unique Chipchick poses for maximum civic impact.</p>
+                        <button class="w-full bg-chip-red text-white font-bold py-3 rounded-full hover:bg-chip-brown transition duration-200 shadow-md">
+                            Buy Now ($8.00)
+                        </button>
+                    </div>
+
+                    <!-- Item 3: Coffee Mug -->
+                    <div class="bg-white p-6 rounded-xl shadow-2xl text-center transition transform hover:scale-[1.02] duration-300">
+                        <img src="https://placehold.co/400x300/3A2E1C/FCD75E?text=Chipchick+Mug" alt="Chipchick Coffee Mug Mockup" class="w-full h-48 object-cover mb-4 rounded-lg border-2 border-chip-gold" onerror="this.onerror=null;this.src='https://placehold.co/400x300/3A2E1C/FCD75E?text=Chipchick+Mug';">
+                        <h3 class="text-xl font-bold text-chip-brown mb-2">The Dip Mug (Curved Handle)</h3>
+                        <p class="text-gray-600 mb-4">Holds 16 oz of your favorite creative fuel.</p>
+                        <button class="w-full bg-chip-red text-white font-bold py-3 rounded-full hover:bg-chip-brown transition duration-200 shadow-md">
+                            Buy Now ($16.50)
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PICTURES SECTION -->
+        <section id="pictures" class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto bg-chip-gold p-6 sm:p-10 rounded-xl shadow-2xl border-4 border-chip-brown">
+                <h2 class="text-4xl font-extrabold text-chip-brown mb-10 text-center border-b-4 border-chip-red pb-2">
+                    Gallery: The Many Faces of Chipchick
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    
+                    <!-- Image 1 -->
+                    <div class="rounded-xl overflow-hidden shadow-lg border-4 border-chip-brown transition duration-300 hover:shadow-2xl hover:scale-[1.05]">
+                         <img src="https://placehold.co/600x600/E4002B/ffffff?text=CHIPCHICK+Original" alt="Original Chipchick Doodle" class="w-full h-full object-cover aspect-square" onerror="this.onerror=null;this.src='https://placehold.co/600x600/E4002B/ffffff?text=CHIPCHICK+Original';">
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="rounded-xl overflow-hidden shadow-lg border-4 border-chip-brown transition duration-300 hover:shadow-2xl hover:scale-[1.05]">
+                         <img src="https://placehold.co/600x600/3A2E1C/FCD75E?text=CHIPCHICK+Mural" alt="Chipchick as a Street Art Mural" class="w-full h-full object-cover aspect-square" onerror="this.onerror=null;this.src='https://placehold.co/600x600/3A2E1C/FCD75E?text=CHIPCHICK+Mural';">
+                    </div>
+
+                    <!-- Image 3 -->
+                    <div class="rounded-xl overflow-hidden shadow-lg border-4 border-chip-brown transition duration-300 hover:shadow-2xl hover:scale-[1.05]">
+                         <img src="https://placehold.co/600x600/FFFFFF/E4002B?text=CHIPCHICK+Vector" alt="Chipchick Vector Art" class="w-full h-full object-cover aspect-square" onerror="this.onerror=null;this.src='https://placehold.co/600x600/FFFFFF/E4002B?text=CHIPCHICK+Vector';">
+                    </div>
+
+                    <!-- Image 4 -->
+                    <div class="rounded-xl overflow-hidden shadow-lg border-4 border-chip-brown transition duration-300 hover:shadow-2xl hover:scale-[1.05]">
+                         <img src="https://placehold.co/600x600/FCD75E/E4002B?text=CHIPCHICK+Fanart" alt="Chipchick Fanart" class="w-full h-full object-cover aspect-square" onerror="this.onerror=null;this.src='https://placehold.co/600x600/FCD75E/E4002B?text=CHIPCHICK+Fanart';">
+                    </div>
+
+                </div>
+                <p class="text-center text-sm mt-6 text-chip-brown italic">
+                    Want your fan art featured? Send us your Chipchick creations!
+                </p>
+            </div>
+        </section>
+
+        <!-- SIGHTINGS SECTION -->
+        <section id="sightings" class="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-extrabold text-chip-brown mb-10 text-center border-b-4 border-chip-red pb-2">
+                    Confirmed Chipchick Sightings
+                </h2>
+                
+                <div class="space-y-6">
+                    <!-- Sighting 1 -->
+                    <div class="bg-white p-5 rounded-xl shadow-lg border-l-8 border-chip-red">
+                        <p class="text-lg font-bold text-chip-red">Sighting #1: The Grocery Aisle</p>
+                        <p class="text-sm text-gray-500 mb-2">Reported on 2025-10-28 in Portland, OR</p>
+                        <p class="text-gray-700">"We saw a shadow of a perfect, curved chip reflected on a row of Pringles cans. It felt like a spiritual moment. It was gone before we could get a photo."</p>
+                    </div>
+                    
+                    <!-- Sighting 2 -->
+                    <div class="bg-white p-5 rounded-xl shadow-lg border-l-8 border-chip-red">
+                        <p class="text-lg font-bold text-chip-red">Sighting #2: The Civic Doodle Replay</p>
+                        <p class="text-sm text-gray-500 mb-2">Reported on 2025-10-27 by The Creators (Private)</p>
+                        <p class="text-gray-700">"During the replay of the original Jackbox session, Chipchick appeared briefly in the crowd animation, perched on the mayor's top hat. It's canon!"</p>
+                    </div>
+                    
+                    <!-- Sighting 3 -->
+                    <div class="bg-white p-5 rounded-xl shadow-lg border-l-8 border-chip-red">
+                        <p class="text-lg font-bold text-chip-red">Sighting #3: In a Bowl of Dip</p>
+                        <p class="text-sm text-gray-500 mb-2">Reported on 2025-10-25 in Austin, TX</p>
+                        <p class="text-gray-700">"My friend swore the final chip in the bowl had tiny little chicken legs before they ate it. Could be fatigue, but we choose to believe."</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Minimalist, Curved Aesthetic) -->
+    <footer class="bg-chip-red py-8 mt-10 text-center curved-top shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-white text-sm">
+                &copy; 2025 Chipchick Fan Community. A tribute to the Jackbox Arts.
+            </p>
+            <p class="text-chip-gold text-xs mt-1">
+                Disclaimer: Not affiliated with Jackbox Games or Pringles (yet).
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Offset for the fixed header height (80px)
+                    const offset = 80; 
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = targetElement.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                     // Close mobile menu after click
+                    if (mobileMenu.classList.contains('block')) {
+                        mobileMenu.classList.remove('block');
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Mobile menu toggle logic
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('block');
+            });
+        }
+    </script>
+</body>
+</html>
+
